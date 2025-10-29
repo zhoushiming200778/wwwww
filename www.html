@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点击提示页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background-color: #f5f5f5;
+        }
+        .clickable-text {
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px dashed #ccc;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .clickable-text:hover {
+            background-color: #e8e8e8;
+            color: darkblue;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>看什么看让你点就点</h1>
+    
+    <div class="clickable-text" onclick="showAlert()">
+        奶的在不点你公扒攀巴掌给你
+    </div>
+    
+    <div class="clickable-text" onclick="showAlert()">
+        点喂
+    </div>
+    
+    <div class="clickable-text" onclick="showAlert()">
+        不干点一下啊
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("请尊重你公扒");
+        }
+    </script>
+</body>
+</html>
